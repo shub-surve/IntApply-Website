@@ -12,7 +12,7 @@ JOBS = [
 
 @app.route("/", methods=['GET'])
 def index():
-    return render_template('home.html', jobs=JOBS)
+    return render_template('Templates/home.html', jobs=JOBS)
 
 @app.route('/jobs', methods=['GET'])
 def list_jobs():

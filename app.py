@@ -9,7 +9,7 @@ JOBS = [
     {"id": 3, "title": "Software Engineer","Location":"Bangalore", "description": "Ensure smooth operation of systems"}
 ]
 
-@app.route("/")
+@app.route("/", methods=['GET'])
 def index():
     return render_template('home.html', jobs=JOBS)
 
